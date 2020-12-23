@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="All posts go here" />
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
@@ -49,10 +49,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
+                  {"I have no idea what goes here"}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
             </header>
             <section>
               <p
